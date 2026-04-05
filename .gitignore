@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Database (seed with seed_writers.py)
+*.db
+
+# macOS
+.DS_Store
