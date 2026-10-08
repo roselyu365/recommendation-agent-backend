@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-08",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "medium",
+  "source": "Actual local Demo browser session with live OpenAI Responses calls",
+  "scripted_demo_inputs": true,
+  "recommendation_turns": 2,
+  "observed_ui_timings": [
+    {
+      "turn": 1,
+      "observed_ms": 46685
+    },
+    {
+      "turn": 2,
+      "observed_ms": 32348
+    }
+  ],
+  "calls": [
+    {
+      "kind": "intent_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 8194,
+      "output_tokens": 442,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 255,
+      "usage_known": true,
+      "accounted_usd": 0.020808,
+      "seconds": 12.868
+    },
+    {
+      "kind": "rank_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 13596,
+      "output_tokens": 2078,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 373,
+      "usage_known": true,
+      "accounted_usd": 0.047972,
+      "seconds": 20.829
+    },
+    {
+      "kind": "recommendation_reason_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 569,
+      "output_tokens": 277,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 51,
+      "usage_known": true,
+      "accounted_usd": 0.003908,
+      "seconds": 7.07
+    },
+    {
+      "kind": "recommendation_review_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 691,
+      "output_tokens": 91,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 69,
+      "usage_known": true,
+      "accounted_usd": 0.002292,
+      "seconds": 5.221
+    },
+    {
+      "kind": "intent_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 8177,
+      "output_tokens": 452,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 259,
+      "usage_known": true,
+      "accounted_usd": 0.020874,
+      "seconds": 11.023
+    },
+    {
+      "kind": "rank_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 4358,
+      "output_tokens": 917,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 426,
+      "usage_known": true,
+      "accounted_usd": 0.017886,
+      "seconds": 10.961
+    },
+    {
+      "kind": "recommendation_reason_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 564,
+      "output_tokens": 312,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 90,
+      "usage_known": true,
+      "accounted_usd": 0.004248,
+      "seconds": 6.543
+    },
+    {
+      "kind": "recommendation_review_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 680,
+      "output_tokens": 84,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 62,
+      "usage_known": true,
+      "accounted_usd": 0.0022,
+      "seconds": 3.294
+    },
+    {
+      "kind": "memory_merge_v4",
+      "model": "gpt-6-sol",
+      "provider_status": "completed",
+      "input_tokens": 534,
+      "output_tokens": 133,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 35,
+      "usage_known": true,
+      "accounted_usd": 0.002398,
+      "seconds": 3.27
+    }
+  ],
+  "estimated_usd": 0.122586,
+  "pricing_basis": "Repository price snapshot 2026-10-07; usage estimate, not invoice",
+  "budget_usd": 1,
+  "nodes": [
+    {
+      "node": "C01",
+      "status": "ok",
+      "mode": "self_check",
+      "duration_ms": 0.195,
+      "budget_ms": 100,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "C02",
+      "status": "ok",
+      "mode": "tool",
+      "duration_ms": 0.848,
+      "budget_ms": 300,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "C03",
+      "status": "ok",
+      "mode": "intent_classification",
+      "duration_ms": 12931.747,
+      "budget_ms": 3000,
+      "over_budget": true,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "C04",
+      "status": "ok",
+      "mode": "search_decision",
+      "duration_ms": 0.241,
+      "budget_ms": 3000,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R01",
+      "status": "ok",
+      "mode": "rule_empty_pool",
+      "duration_ms": 0.447,
+      "budget_ms": 600,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R02",
+      "status": "ok",
+      "mode": "search_decision",
+      "duration_ms": 1.843,
+      "budget_ms": 1500,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R03",
+      "status": "ok",
+      "mode": "tool",
+      "duration_ms": 3.927,
+      "budget_ms": 1200,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R04",
+      "status": "ok",
+      "mode": "self_check",
+      "duration_ms": 193.344,
+      "budget_ms": 150,
+      "over_budget": true,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R05",
+      "status": "ok",
+      "mode": "model",
+      "duration_ms": 20837.397,
+      "budget_ms": 3000,
+      "over_budget": true,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R06",
+      "status": "ok",
+      "mode": "rule",
+      "duration_ms": 0.27,
+      "budget_ms": 100,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R07",
+      "status": "ok",
+      "mode": "model_with_review",
+      "duration_ms": 12301.023,
+      "budget_ms": 2500,
+      "over_budget": true,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R08",
+      "status": "ok",
+      "mode": "self_check",
+      "duration_ms": 26.578,
+      "budget_ms": 250,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "C01",
+      "status": "ok",
+      "mode": "self_check",
+      "duration_ms": 0.285,
+      "budget_ms": 100,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "C02",
+      "status": "ok",
+      "mode": "tool",
+      "duration_ms": 2.196,
+      "budget_ms": 300,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "C03",
+      "status": "ok",
+      "mode": "intent_classification",
+      "duration_ms": 11032.431,
+      "budget_ms": 3000,
+      "over_budget": true,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "C04",
+      "status": "ok",
+      "mode": "search_decision",
+      "duration_ms": 0.019,
+      "budget_ms": 3000,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R01",
+      "status": "ok",
+      "mode": "rule_empty_pool",
+      "duration_ms": 0.173,
+      "budget_ms": 600,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R02",
+      "status": "ok",
+      "mode": "search_decision",
+      "duration_ms": 1.385,
+      "budget_ms": 1500,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R03",
+      "status": "ok",
+      "mode": "tool",
+      "duration_ms": 4.207,
+      "budget_ms": 1200,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R04",
+      "status": "ok",
+      "mode": "self_check",
+      "duration_ms": 118.241,
+      "budget_ms": 150,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R05",
+      "status": "ok",
+      "mode": "model",
+      "duration_ms": 10965.746,
+      "budget_ms": 3000,
+      "over_budget": true,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R06",
+      "status": "ok",
+      "mode": "rule",
+      "duration_ms": 0.121,
+      "budget_ms": 100,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R07",
+      "status": "ok",
+      "mode": "model_with_review",
+      "duration_ms": 9845.985,
+      "budget_ms": 2500,
+      "over_budget": true,
+      "failure_reason": null,
+      "fallback": null
+    },
+    {
+      "node": "R08",
+      "status": "ok",
+      "mode": "self_check",
+      "duration_ms": 25.494,
+      "budget_ms": 250,
+      "over_budget": false,
+      "failure_reason": null,
+      "fallback": null
+    }
+  ],
+  "limitations": [
+    "One scripted demo, not formal evaluation",
+    "Node latency budgets exceeded; no model fallback in the two recommendation traces",
+    "No confirmed long-term memory recall was tested",
+    "Companion model answers not included",
+    "Continuous browser frame capture with pauses between recording segments shortened; video is not latency benchmark"
+  ]
+}
